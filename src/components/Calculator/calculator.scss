@@ -1,0 +1,181 @@
+.calculator{
+    width: 550px;
+    margin: auto;
+
+    nav{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        h1{
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        section{
+            width: fit-content;
+            font-weight: 700;
+
+
+            ul {
+                margin: 0px 0px 0px auto;
+                font-size: 12px;
+                width: 80px;
+                height: 30px;
+                list-style: none;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            p{  
+                display: flex;
+                align-items: center;
+
+
+                .text{
+                   margin-right: 20px;
+                   font-size: 12px; 
+                }
+
+                .toggle {
+                    background: var(--toggleBgColor);
+                    width: 80px;
+                    height: 30px;
+                    border: none;
+                    outline: none;
+                    border-radius: 20px;
+
+                    .mode {
+                        opacity: 0;
+                        padding: 1px 8px;
+                        margin: 2px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        background-color: var(--toggleKey);
+                        // transition: all 300ms ease-in-out;
+                    }
+
+                    .mode:hover
+                    {
+                    }
+                }
+            }
+        }
+    }
+
+    .number-window{
+        margin-bottom: 25px;
+        background-color: var(--numberScreen);
+        padding: 35px;
+        border-radius: 10px;
+
+        // .wrapper {
+        //     width: 100%;
+        //     display: flex;
+        //     justify-content: right;
+        //     overflow: hidden;
+        // }
+
+        .calculator-screen{
+            text-transform: full-width;
+            letter-spacing: 2px;
+            width: 100%;
+            font-family: Spartan;
+            color: var(--secondaryColor);
+            text-align: right;
+            background-color: transparent;
+            border: none;
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .calculator-screen::placeholder{
+            color: var(--secondaryColor);
+        }
+    }
+
+    .number-grid{
+    
+        .grid-container{
+            text-align: center;
+            background: var(--toggleBgColor);
+            padding: 30px;
+            font-size: 20px;
+            margin: auto;
+            border-radius: 10px;
+
+
+
+        .grid1 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px 20px;
+            // grid-template-columns: auto auto auto auto;
+            list-style: none;
+
+
+            .grid-item {
+              cursor: pointer;
+                line-height: 65px;
+                width: 100px;
+                height: 65px;
+                text-align: center;
+                border-radius: 10px;
+            }
+
+        }
+
+        .grid2{
+            margin: 30px 0px; 
+            display: flex;
+           justify-content: space-between;
+            list-style: none;
+
+            .grid2-item
+            {
+              cursor: pointer;
+                width: calc(50% - 15px);
+                padding: 20px 0;
+                border-radius: 10px;
+            }
+        }
+
+        .color {
+        box-shadow:  0px 4px 0px 0px var(--shadow1); 
+        font-size: 32px;
+        background-color: var(--color1);
+        color: var(--keyColor);
+        }
+        .color2 {
+        box-shadow: 0px 4px 0px 0px var(--shadow3);
+        background-color: var(--color2);
+        color: var(--keyColor2);
+        }
+
+        .color3 {
+        box-shadow:  0px 4px 0px 0px var(--shadow2);
+        background-color: var(--toggleKey);
+        color: var(--keyColor3);
+        transition: all .3s ease;
+        }
+
+
+        .color3:hover {
+
+        box-shadow: inset  0px 0px 6px 2px var(--shadow2);
+
+        } 
+        .color:hover {
+            box-shadow: inset 0px 0px 6px 2px var(--shadow1);
+            }
+        .color2:hover {
+            box-shadow: inset 0px 0px 6px 2px var(--shadow3);
+        }
+
+}
+}
+}
+
+
